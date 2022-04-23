@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+<style>
+
+    p{
+        background: purple;
+        color:aliceblue;
+        height: 100px;
+        width:100px;
+    }
+    /* inline element dont care of height and width */
+     .fun{ 
+        height: 100px;
+        width:100px;
+        background:orange;
+        display: inline-block;
+        /* hybrid inline & block-respects height & width;also keeps it side by side */
+    }
+ h1{
+     background:blue
+ }
+</style>
+
+ 
+</head>
+
+<body>
+    <a class="fun"href="https://www.google.com">inline block</a>
+    <a class="fun"href="https://www.google.com">inline blocl</a>
+<!-- block element -occupy full witdh of container -->
+    <p>awesome-block</p>   <p>Good-block</p>
+
+    <a class="fun" href="https://www.google.com">inline1</a>
+<h1>cool -block  </h1>
+<a class="fun"href="https://www.google.com">inline2</a>
+</body>
+</html>
+
+<!-- p,heading,div-block element  -->
+<!-- a,imag,span-inline element -->

@@ -1,0 +1,42 @@
+/* ul{
+    list-style: none;
+    font: size 44px;
+}
+
+ul{
+    color:orangered;
+}
+
+/* nth child */
+/* ul>li:nth-child(odd){
+    color:orange;
+}
+ul>li:nth-child(even){
+    color:crimson;
+} */ */
+
+ul>li:nth-child(1){
+    color:rgb(73, 53, 75);
+}
+
+ul>li:nth-child(2){
+    color:rgb(49, 151, 177);
+}
+
+ul>li:nth-child(3){
+    color:rgb(194, 179, 151);
+}
+
+ul>li:nth-child(4){
+    color:rgb(0, 255, 64);
+}
+
+ul>li:nth-child(5){
+    color:rgb(129, 99, 42);
+}
+
+
+/* for share use comma */
+/* ul>li:nth-child(1),ul>li:nth-child(2){
+    color:coral;
+} */

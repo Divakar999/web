@@ -1,0 +1,101 @@
+/* ul{
+    list-style: none;
+    font: size 44px;
+}
+
+ul{
+    color:orangered;
+}
+
+/* nth child */
+/* ul>li:nth-child(odd){
+    color: orange;
+}
+ul>li:nth-child(even){
+    color:crimson;
+} */ 
+
+ul>li:nth-child(1){
+    background:plum;
+}
+
+ul>li:nth-child(2){
+    background:blueviolet;
+}
+ul>li:nth-child(3){
+    background:cornflowerblue;
+    /* position:relative;
+    left:10px; */
+    
+ } 
+
+ul>li:nth-child(4){
+    background:mediumslateblue;
+     /* position:absolute;
+    top:0px; */
+
+}
+ul>li:nth-child(5){
+    background:darkorange;
+    
+}
+
+/* ul>li:nth-child(even){
+    position:relative;
+    left:20px;
+} */
+
+
+ul{ /*position:relative;*/
+    display:flex;
+    padding:2px;
+    list-style: none;
+    font-size:44px;
+
+    /*new css*/
+    position:sticky;
+    top:0px;
+}
+
+ul > li{
+    padding:8px
+}
+/* body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+/* 
+position-static(default) */
+/* 1.ststic-default */ 
+/* 2.relative:ninja(no one is notice he is moving)*/
+/* 3.absolute: bad thief (hide in nearest relative) (overlap)*/
+/* 4.fixed: float*/
+/* 5.sticy:static & fixed (top:0px)*/
+
+.cookies{
+    background:darkmagenta;
+    color:white;
+    padding:32px;
+    border-radius:10px;
+    font-family: roboto;
+    width:300px;
+    
+
+    /*new css*/
+    position:fixed;
+    bottom: 20px;
+    left: -20px;
+    transition:0.2s
+}
+
+.cookies:hover{
+       transform:translate(50px);
+      background:red;
+}
+
+body{
+    margin:0;
+}

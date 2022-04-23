@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        display:flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <h1>forms</h1>
+    <!-- to use validation the inputs mmust be in form tag -->
+    <form>
+    <!-- when cursor on name its goes to fill up
+    for this-> id and name should be same -->
+    <label for="name">name</label>
+    <input type="text" id="name" value="Divakar"placeholder="enter your name"required>
+     <br>
+     <label for="password">password</label>
+    <input type="password" id="password"minlength="8" maxlength="12" value=""placeholder="enter your password"required>   
+     <br>
+     <label for="age">age</label>
+    <input type="number" id="age"min="18" max="100"placeholder="enter your age">
+    <br>
+    <label for="email">email</label>
+    <input type="email" id="email" value=""placeholder="enter your email"required>
+    <div>
+        <h4>Gender</h4>
+        <!-- connecting radio button need name to be same
+        connecting  label abd input -> for and id must be same -->
+      
+        <input type="radio"name="gender"value="male"id="male">
+        <label for="male">male</label>
+        <input type="radio"name="gender"value="female"id="female">
+        <label for="female">female</label>
+    </div>
+
+<div>
+    <h4>Hobbies</h4>
+    <div> 
+        <input type="checkbox" name="hobbies" id="badminton">
+        <label for="badminton">badminton</label>
+     </div>
+    <div> 
+        <input type="checkbox" name="hobbies" id="travelling">
+        <label for="travelling">travelling</label>
+    </div>
+    <div>  
+        <input type="checkbox" name="hobbies" id="reading">
+       <label for="reading">reading</label>
+       <div>
+   <div> 
+        <input type="checkbox" name="hobbies" id="swimming">
+       <label for="swimming">swimming</label> 
+    </div>
+    <div> 
+        <input type="checkbox" name="hobbies" id="cooking">
+        <label for="cooking">cooking</label>
+    </div>
+</div>
+<div>
+    <h4>state</h4>
+    <select>
+        <option value="TN">tamilnadu</option>
+        <option value="MH">Maharashtra</option>
+        <option value="jk">jammu & kashmir</option>
+        <option value="kA">karnataka</option>
+        <option value="UP">uttar pradesh</option>
+    </select>
+</div>
+<div>
+    <h4>date of birth</h4>
+    <input type="date" >
+</div>
+<div>
+    <h4>choose your fav color</h4>
+    <input type="color">
+</div>
+
+<h4>Tweet</h4>
+    <textarea placeholder="tell us what's ur mind" id="" cols="30" rows="10"></textarea>
+    <button type="submit">submit</button>
+
+</form>
+</body>
+</html>

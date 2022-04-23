@@ -1,0 +1,61 @@
+.card-content{
+     /* border:1px solid rgb(1, 4, 8); */
+     padding:10px;
+}
+.office-image{
+    background:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"),
+   hsl(276deg, 51%,60%);
+   background-blend-mode:luminosity;
+   height:320px; 
+   width:985px;
+   background-size:cover;
+}
+section{
+     background:hsl(246deg 38% 16%);
+     color: hsl(288deg 100% 99%);
+     display:flex;
+      height:320px; 
+     font-family: 'Lexend Deca', sans-serif;
+     max-width: 1000px;
+     border-radius: 10px;
+     overflow: hidden;
+}
+
+.insights{
+    color:hsl(276deg, 51%,60%);
+}
+.card-info{
+    color:hsl(276deg 51% 60%);
+    font-size:9px;
+    font-weight:200;
+    margin-bottom:36px;
+
+}
+ 
+.card-count-title{
+    color:hsl(245deg 11% 54%)
+     margin-top:5px; 
+     font-size:12px;
+     }
+
+.card-social-media{
+    display:flex;
+    /* background: orange; */
+    justify-content:space-between;
+}
+ .card-count{
+     margin-bottom:0;
+ }
+
+body{
+    background-color: hsl(233deg,46%,7%);
+    display:flex;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+}
+
+/* vh:view port height
+1vh-2%of screen height */
+
+
