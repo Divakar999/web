@@ -57,7 +57,7 @@ body{
 }
  
 /* combinators-relation between selector */
- /* >-child selector/combinators */
+ /* >  child selector/combinators */
 /* selector1>selector2----id,class,element */
 
  /* .container>p{

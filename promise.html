@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Trail1(chr,strength){
+            if(strength >50){
+                return chr +"⚔️";
+            }else {
+                throw Error (chr +"🐍");
+            }
+        }
+        function Trail2(chr,iq){
+            if(iq > 90){
+                return chr +"💰 ";
+            }else {
+                throw Error ("💀");
+            }
+        }
+             
+           
+           //create promise-2% lifetime
+
+        const hero=(age,character)=>
+            new Promise((resolve,reject)=>{
+                if(age>18){
+                    resolve(character);
+                }else{
+                    reject("😷 Try after few years");
+                }
+            });
+            
+
+         //98% -promise usage  
+           function Dugeon(){
+               hero(20,"😍")//promise object "😍"
+               .then(chr=>Trail(chr,100))// "😍⚔️"
+               .then(chrWithSword=>Trail2(chrWithSword,120))//"😍⚔️💰"
+               .then(result=>console.log(result))
+            
+               hero(14,"😍")//promise object "😍"
+               .then(chr=>Trail(chr,100))//skip
+               .then(chrWithSword=>Trail2(chrWithSword,120))//skip
+               .then(result=>console.log(result))//skip
+               .catch(errMsg=>console.log("🏥"+errMsg))
+              
+
+
+            //comeback
+                 hero(25,"😍")//promise object "😍"
+                .then(chr=>Trail(chr,40)) //"😍⚔️"
+                //then(resolve path,reject path)
+                .then(chrWithSword=>Trail2(chrWithSword,120),chrWithSnake=>Trail2(chrWithSnake,140) ) //"😍🐍💰"
+                .then(result=>console.log(result))
+                .catch(errMsg=>console.log("🏥"+errMsg))
+            
+                hero(25,"😍")//promise object "😍"
+                .then(chr=>Trail(chr,40)) //"😍⚔️"
+                //then(resolve path,reject path)
+                .then(chrWithSword=>Trail2(chrWithSword,120),chrWithSnake=>Trail2(chrWithSnake,60) ) //"😍🐍💰"
+                .then(result=>console.log(result),skull=>console.log("❌",skull))
+                .catch(errMsg=>console.log("🏥"+errMsg))
+            
+                hero(25,"😍")//promise object "😍"
+                .then(chr=>Trail(chr,40)) //"😍⚔️"
+                //then(resolve path,reject path)
+                .then(chrWithSword=>Trail2(chrWithSword,120),chrWithSnake=>Trail2(chrWithSnake,140) ) //"+😍🐍💰"
+                .then(result=>console.log(result))//skip
+                .catch(errMsg=>console.log("🏥"+errMsg))
+            
+            
+            // Win + . -> emoji
+            }
+               //.then return promise object
+            //secret - dot chaining ->returning same data type
+            [1,2,4]
+            .map(x=>x+2) //💯% returns araay
+            //[3,5,6]
+            .map(x=>x*2)
+            //.map
+            //.map
+            //...
+            
+            
+            Dugeon();
+    </script>
+</body>
+</html>

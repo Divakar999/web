@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+   <script>
+    //    recursion -> calling function in fn
+        var x=2*1000;
+        //  setTimeout(()=>{
+        //      console.log(3);
+        //  },2*1000);
+          
+        //  setTimeout(()=>{
+        //      console.log(2);
+        //  },4*1000);
+
+        //  setTimeout(()=>{
+        //      console.log(1);
+        //  },6*1000);
+        //  2s ->3  2s->2  2s->1
+            //nesting:->setTimeout inside
+        
+          //timer1
+            setTimeout( function cb1(){
+             console.log(3);
+                 //timer2
+             setTimeout( function cb2(){
+                 console.log(2);
+                   // timer3
+             setTimeout( function cb3(){
+                console.log(1);
+             
+         },x); 
+         },x);
+         },x);
+  
+  </script>
+</body>
+</html>

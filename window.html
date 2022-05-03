@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window object</title> 
+<style>
+    .btn{
+        font-size:2rem;
+
+    }
+    body{
+        font-family:Roboto;
+        min-height:100vh;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    } 
+</style>
+</head>
+<!-- <h1> cool </h1> -->
+<body>
+    <!-- <button class="btn" onclick="startCycle()"> start Cycle colors</button>
+    <button class="btn" onclick="stopCycle()"> stop Cycle colors</button> -->
+     <button class="btn" onclick="toggleCycleColors()">Toggle cycle colors</button>
+     <h1 class="switch-state">OFF</h1>
+   <script>
+        // const a=10;
+        // const  b=20;
+        // console.log("Hi")
+        // function good(){
+        //     console.log('this is fun day')
+        // }
+         //Acess methods on browser tab 
+        //  window.alert is grandfather of console.log
+        //   console.log() is document object
+        //  console.log(window)
+        //  console.log(document) //in DOM
+        // window.alert(`super cool ${a+b}`);
+    //    const response= window.confirm("Are u sure u want to continue");
+    //    console.log (response)
+
+    //    const name=window.prompt("Provide your name");
+    //    console.log(name);
+        
+    //timer here 1st argu is fn & 2nd timer 5000 mean 5 sec it is seen after 5 sec
+    /*window.setTimeout(function cool()=>{
+            console.log("welcome,D7")
+        },5000)*/
+
+        //when event complete it should start another task 
+        //Timer(event) (5s) runs out ->cool function(callback) is called
+     //runner:every 2sec fn will run
+       /* msg= window.setInterval(()=>{
+            console.log("welcome,Diva")
+        },2*1000)*/
+
+        //stopper
+        // clearInterval(msg);
+
+
+         // "welcome,Diva" every 2s *3 times then stop
+         //runner -> 6s(time)->stop
+        /*window.setTimeout(()=>{
+            clearInterval(msg);
+            console.log("stopped the Interval")
+        },6*1000)*/
+             
+        //every 2s body background must change color & cycle back
+        let cycleClrs;  //gobal:makes it accessible in both function (startcycle,stopcycle)
+        let index=0;    // global:resume color i.e.we stop the button next color seen not starting one
+        function startCycle(){
+        const colors = ["crimson","skyblue","teal","orange","purple"];
+       
+       cycleClrs = window.setInterval(()=>{  
+            if(index===colors.length){
+                index=0; //restart /cycle back
+            }
+         document.body.style.background=colors[index];
+         console.log(colors[index],index);
+         index++;
+       },2*1000);
+
+    }
+
+    function stopCycle(){ 
+console.log("Stop Cycle");
+clearInterval(cycleClrs);
+    }
+   let cycleSwitch="OFF";
+    function toggleCycleColors(){
+       if(cycleSwitch=== "OFF"){
+           startCycle();
+           cycleSwitch="ON";
+       } else{
+           stopCycle();
+           cycleSwitch="OFF";
+       }
+        document.querySelector(".switch-state").innerText=cycleSwitch;
+    }
+
+ 
+    </script> 
+</body>
+</html>

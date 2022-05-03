@@ -1,0 +1,39 @@
+.container{
+    max-width: 200px;
+   background-color:white;
+   border-radius:0.5rem;
+   overflow:hidden;
+   box-shadow: 3px 3px 10px 0px rgba(50,50,50,0.1);
+}
+
+
+body{
+    background:whitesmoke;
+    font-family: roboto, "helvitica Neue";
+     display:flex;
+    flex-wrap: wrap;
+     gap:2rem;
+     justify-content: space-around; 
+    
+}
+
+/*1 rem =16px*/
+/*15 rem =240px*/
+.flag{
+    width:100%;
+}
+
+
+.info{
+    padding: 1rem;
+}
+
+.info span{
+    font-weight: bold;
+}
+
+
+
+
+
+
